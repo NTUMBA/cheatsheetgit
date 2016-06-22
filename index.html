@@ -23,13 +23,64 @@
     </p>
     <h1>LES COMMANDES LES PLUS IMPORTANTES</h1>
     <h2>LES COMMANDES RELATIVES A LA CRÉATION</h2>
-    <h2>LES COMMANDES LIES A LA RECHERCE DE DOCS ET FICHIER AINSI QU'AUX MODIFICATIONS</h2>
-    <h2>CELLES LIEES A L4HISTORIQUE: COMMIT</h2>
+    <ul>
+      <li>Pour cloner un repository existant: $ git clone ssh://user@domain.com/repo.git</li>
+      <li>Pour créer un nouvel endroit de Repository (initialiser un dossier): $ git init</li>
+    </ul>
+    <h2>LES COMMANDES LIEES A LA RECHERCE DE DOCS ET FICHIERS AINSI QU'AUX MODIFICATIONS</h2>
+    <ul>
+      <li>Changer les fichiers à l'intérieur du Repository courant: $ git status</li>
+      <li>Changer le fichier courant: $ git diff</li>
+      <li>Ajouter toutes les modifications au commit suivant: $ git add</li>
+      <li>Ajouter quelques modifications dans 'file' au commit suivant: $ git add -p nom du fichier</li>
+      <li>Commit toutes les modifications du fichier courant: $ git commit -a</li>
+      <li>Commit la modification qu'on vient d'effectuer: $ git commit</li>
+      <li>Changer le dernier commit: (Ne pas modifier le commit publié) $ git commit--amend</li>
+    </ul>
+    <h2>CELLES LIEES A L'HISTORIQUE: COMMIT</h2>
+    <ul>
+      <li>Afficher tous les commits, en commençant par le plus récent: $ git log</li>
+      <li>Afficher les modifications effectuées sur un fichier en particulier: $ git log -p nom du fichier</li>
+      <li>Affiche l'auteur et le moment d'une modification: $ git blame nom du fichier</li>
+    </ul>
     <h2>POUR LES BRANCHES ET LES BALISES</h2>
+    <ul>
+      <li>Afficher la liste des branches existantes: $ git branch -av</li>
+      <li>Changer de branche: $ git checkout branch (branch= nom de la branche)</li>
+      <li>Créer une nouvelle branche à partir de la branche courante: $ git branch nom de la nouvelle branche</li>
+      <li>Créer une nouvelle branche à partir de la branche du Remote: $ git checkout --track nom du remote/nom de la branche</li>
+      <li>Pour supprimer une branche en local: git branch -d nom de la branche</li>
+      <li>marquer le commit en courant avec un tag: $ git tag tag-name</li>
+    </ul>
     <h2>CONCERNANT LES MISES A JOUR ET PUBLICATIONS</h2>
+    <ul>
+      <li>Afficher la liste de tous les remotes à jour:$ git remote -v</li>
+      <li>Afficher les informations relatives à un remote: $git remote show remote-name</li>
+      <li>Ajouter un repository nommé remote:$ git remote add abreviation du nom url</li>
+      <li>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD: $ git fetch nom du remote</li>
+      <li>Télécharger tout en fusionnant et intégrant les modifications dans HEAD: $ git pull nom du remote nom de la branche</li>
+      <li>Intégrerles modifications locales dans le remote: $ git push nom du remote nom de la branche</li>
+      <li>Supprimer la branche d'un remote: $ git branch -dr nom du remote/nom de la branche</li>
+      <li>Inserer une balise: $ git push --tags</li>
+    </ul>
     <h2>LA FUSION ET CHANGEMENT DE BASE</h2>
+    <ul>
+      <li>Fusionner une branche à l'intérieur du HEAT courant: $ git merge nom de la branche</li>
+      <li>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés): $ git rebase nom de la branche </li>
+      <li>Abondonner un rebase: $ git rebase --abort</li>
+      <li>Poursuivre une rebase après la résolution d'un conflit: $ git rebase --continue</li>
+      <li>Utiliser l'outil de configuration de fusion pour resoudre un conflit: $ git mergetool</li>
+      <li>Utiliser son éditeur de texte pour résoudre un conflit et par la suite indiquer le fichier comme étant résolu</li>
+    </ul>
     <h2>ANNULATION</h2>
-
+    <ul>
+      <li>Annuler toutes les modifications de mon dossier courant: $ git reset --hard HEAD</li>
+      <li>Annuler  toutes les modifications accomplies dans un fichier en particulier: $ git checkout HEAD nom du fichier</li>
+      <li>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées): $ git revert le commit</li>
+      <li>Reinitialiser le pointeur du HEAD vers un commit précédent  et ensuite annuler toutes les modifications à partir de ce point: $ git reset --hard le commit</li>
+      <li>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées: $ git reset --keep le commit</li>
+      <li>Idem mais conserver les modifications locale pas encore commit: $ git reset --keep nom du commit</li>
+    </ul>
     <h1>QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE</h1>
     <h2>LES COMMITS CONCERNENT RAPPORTENT LES MODIFICATIONS</h2>
     <h2>IL EST CONSEILLE DE REDIGER LES COMMITS FRÉQUEMMENT</h2>
