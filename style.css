@@ -10,7 +10,7 @@ body{
   background-image:url("https://www.atlassian.com/git/images/atlassian-getting-git-right.jpg");
 }
 .def{
-
+color: darkorange
 }
 h1{
   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
