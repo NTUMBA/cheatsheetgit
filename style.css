@@ -2,3 +2,7 @@
 background-image:url("https://www.atlassian.com/git/images/atlassian-getting-git-right.jpg");
 background-size: contain;
  }
+body{
+  background-color: seashell;
+  font-family:  Courier, "Lucida Console", monospace;
+}

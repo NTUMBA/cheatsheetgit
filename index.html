@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>GIT POUR GERER DES PROJETS DE VERSION DE CODE</title>
+<title>GIT POUR GERER DES PROJETS DE VERSIONS DE CODE</title>
 <meta charset="utf-8"/>
 <link rel="stylesheet" style="text/css" href="style.css">
 </head>
 <body>
-  <h1>DEFINITION</h1>
+  <h1>Cheatsheet_GIT<h1>
+  <h2>DEFINITION</h2>
   <p>GIT est un logiciel de gestion de versions en mode distribué</p>
   <p>Git est un outil très pratique. En effet, il est très facile à apprendre
     et incontournable aussi bien pour de grands projets  que pour dceux à
@@ -23,13 +24,13 @@
     à consulter.
     </p>
     <div class="matrix">
-    <h1>LES COMMANDES LES PLUS IMPORTANTES</h1>
-    <h2>LES COMMANDES RELATIVES A LA CRÉATION</h2>
+    <h2>LES COMMANDES LES PLUS IMPORTANTES</h2>
+    <h3>LES COMMANDES RELATIVES A LA CRÉATION</h3>
     <ul>
       <li>Pour cloner un repository existant: $ git clone ssh://user@domain.com/repo.git</li>
       <li>Pour créer un nouvel endroit de Repository (initialiser un dossier): $ git init</li>
     </ul>
-    <h2>LES COMMANDES LIEES A LA RECHERCE DE DOCS ET FICHIERS AINSI QU'AUX MODIFICATIONS</h2>
+    <h3>LES COMMANDES LIEES A LA RECHERCE DE DOCS ET FICHIERS AINSI QU'AUX MODIFICATIONS</h3>
     <ul>
       <li>Changer les fichiers à l'intérieur du Repository courant: $ git status</li>
       <li>Changer le fichier courant: $ git diff</li>
@@ -39,13 +40,13 @@
       <li>Commit la modification qu'on vient d'effectuer: $ git commit</li>
       <li>Changer le dernier commit: (Ne pas modifier le commit publié) $ git commit--amend</li>
     </ul>
-    <h2>CELLES LIEES A L'HISTORIQUE: COMMIT</h2>
+    <h3>CELLES LIEES A L'HISTORIQUE: COMMIT</h3>
     <ul>
       <li>Afficher tous les commits, en commençant par le plus récent: $ git log</li>
       <li>Afficher les modifications effectuées sur un fichier en particulier: $ git log -p nom du fichier</li>
       <li>Affiche l'auteur et le moment d'une modification: $ git blame nom du fichier</li>
     </ul>
-    <h2>POUR LES BRANCHES ET LES BALISES</h2>
+    <h3>POUR LES BRANCHES ET LES BALISES</h3>
     <ul>
       <li>Afficher la liste des branches existantes: $ git branch -av</li>
       <li>Changer de branche: $ git checkout branch (branch= nom de la branche)</li>
@@ -54,7 +55,7 @@
       <li>Pour supprimer une branche en local: git branch -d nom de la branche</li>
       <li>marquer le commit en courant avec un tag: $ git tag tag-name</li>
     </ul>
-    <h2>CONCERNANT LES MISES A JOUR ET PUBLICATIONS</h2>
+    <h3>CONCERNANT LES MISES A JOUR ET PUBLICATIONS</h3>
     <ul>
       <li>Afficher la liste de tous les remotes à jour:$ git remote -v</li>
       <li>Afficher les informations relatives à un remote: $git remote show remote-name</li>
@@ -65,7 +66,7 @@
       <li>Supprimer la branche d'un remote: $ git branch -dr nom du remote/nom de la branche</li>
       <li>Inserer une balise: $ git push --tags</li>
     </ul>
-    <h2>LA FUSION ET CHANGEMENT DE BASE</h2>
+    <h3>LA FUSION ET CHANGEMENT DE BASE</h3>
     <ul>
       <li>Fusionner une branche à l'intérieur du HEAT courant: $ git merge nom de la branche</li>
       <li>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés): $ git rebase nom de la branche </li>
@@ -74,7 +75,7 @@
       <li>Utiliser l'outil de configuration de fusion pour resoudre un conflit: $ git mergetool</li>
       <li>Utiliser son éditeur de texte pour résoudre un conflit et par la suite indiquer le fichier comme étant résolu</li>
     </ul>
-    <h2>ANNULATION</h2>
+    <h3>ANNULATION</h3>
     <ul>
       <li>Annuler toutes les modifications de mon dossier courant: $ git reset --hard HEAD</li>
       <li>Annuler  toutes les modifications accomplies dans un fichier en particulier: $ git checkout HEAD nom du fichier</li>
@@ -84,16 +85,16 @@
       <li>Idem mais conserver les modifications locale pas encore commit: $ git reset --keep nom du commit</li>
     </ul>
   </div>
-    <h1>QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE</h1>
-    <h2>LES COMMITS RAPPORTENT LES MODIFICATIONS</h2>
-    <h2>IL EST CONSEILLE DE REDIGER LES COMMITS FRÉQUEMMENT</h2>
-    <h2>EVITER DE COMMIT DES TACHES NON ABOUTIES</h2>
-    <h2>TESTER LES CODES AVANT DE REDIGER LES COMMITS CORRESPONDANT</h2>
-    <h2>LES MESSAGES LIÉS AUX COMMIT DOIVENT ÊTRE CONCIS PRECIS ET PERTINENT</h2>
-    <h2>LES VERSIONS DE CONTROLE NE DOIVENT PAS ÊTRE CONSIDERER COMME ETANT DES SYSTEMES DE SAUVEGARDE</h2>
-    <h2>S'ACCORDER SUR LE FLUX DES OPERATIONS</h2>
-    <h2>AIDE ET CONSULTATION DE DOCUMENTS</h2>
-    <h2>LES RESSOURCES EN LIGNE</h2>
+    <h2>QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE</h2>
+    <h3>LES COMMITS RAPPORTENT LES MODIFICATIONS</h3>
+    <h3>IL EST CONSEILLE DE REDIGER LES COMMITS FRÉQUEMMENT</h3>
+    <h3>EVITER DE COMMIT DES TACHES NON ABOUTIES</h3>
+    <h3>TESTER LES CODES AVANT DE REDIGER LES COMMITS CORRESPONDANT</h3>
+    <h3>LES MESSAGES LIÉS AUX COMMIT DOIVENT ÊTRE CONCIS PRECIS ET PERTINENT</h3>
+    <h3>LES VERSIONS DE CONTROLE NE DOIVENT PAS ÊTRE CONSIDERER COMME ETANT DES SYSTEMES DE SAUVEGARDE</h3>
+    <h3>S'ACCORDER SUR LE FLUX DES OPERATIONS</h3>
+    <h3>AIDE ET CONSULTATION DE DOCUMENTS</h3>
+    <h3>LES RESSOURCES EN LIGNE</h3>
 
 </body>
 </html>
