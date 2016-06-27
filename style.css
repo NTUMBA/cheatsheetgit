@@ -20,15 +20,19 @@ h1{
    font-style: italic;
    font-size: 50px;
 }
+img{
+  width: 700px;
 
+}
 .pic{
   border-width: thin;
   border:medium solid red;
   background-color: #e6e6fa;
-  text-align: center;
-  padding-left: 2%;
-  padding-bottom: 2%;
-  padding-top: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  margin-right: 50%;
 }
 .root{
   border-width: thin;
