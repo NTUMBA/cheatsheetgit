@@ -44,6 +44,10 @@ padding-right: 15%;
 padding-bottom: 2%;
 padding-top: 2%;
 margin-left: 60%;
-
+}
+@media screen and (max-width: 1308px) {
+          .sch,.pic {
+              display:none
+            }
 
 }
