@@ -15,6 +15,9 @@ section{
 span{
   font-weight: bold;
 }
+.objectif{
+  color:darkorange;
+}
 .sch{
   max-width: 100%
   margin: 0 auto;
