@@ -14,10 +14,16 @@ body{
   z-index:1;
   float: left;
   padding: 3px 13px 9px 9px;
+  color:#1e90ff;
 }
 .cognito{
-  padding: 3px 13px 9px 0px;
+  position: absolute;
+  z-index:2;
+  float: left;
+  font-weight: bold;
+  padding: 3px 13px 9px 9px;
   color: #ff8c00!important;
+  background-color: #1e90ff;
 }
 .logo{
   margin-top: -25px;
@@ -29,8 +35,9 @@ body{
   max-width: 140px;
   transition: transform 4s;
 }
-.helloo{
-  color:#1e90ff;
+
+.cognito,.logo{
+  border: 1px solid #ff8c00;
 }
 
 section{
