@@ -7,8 +7,8 @@
 <link rel="stylesheet" style="text/css" href="style.css">
 </head>
 <body>
+  <h1>Cheatsheet_GIT</h1>
   <section>
-    <h1>Cheatsheet_GIT</h1>
     <div class="def">
     <h2>DEFINITION</h2>
     <p>GIT est un logiciel de gestion de versions en mode distribué</p>
@@ -35,68 +35,68 @@
       <div class="matrix">
       <h2>LES COMMANDES LES PLUS IMPORTANTES</h2>
       <h3>Les commandes relatives à la création</h3>
-      <div>
-        <p>Pour clôner un repository entendez projet (dossier -folder-) existant:<span> git clone ssh://user@domain.com/NomDuRepository.git</span> </li>
-        <p>Pour créer un nouvel endroit de Repository (initialiser un dossier): <span> git init</span></p>
-      </div>
+      <table>
+        <tr><td>Pour clôner un repository entendez projet (dossier -folder-) existant:</td><td><span> git clone ssh://user@domain.com/NomDuRepository.git</span> </td></tr>
+        <tr><td>Pour créer un nouvel endroit de Repository (initialiser un dossier):</td><td> <span> git init</span></td></tr>
+      </table>
       <h3>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h3>
-      <div>
-        <p>Vérifier l'état du projet en local par rapport aux du Repository courant:<span>  git status</span></p>
-        <p>Changer le fichier courant:  git diff</p>
-        <p>Ajouter toutes les modifications au commit suivant:<span>  git add -A</span></p>
-        <p>Ajouter quelques modifications dans 'file' au commit suivant:</span>  git add -p nom du fichier</span></p>
-        <p>Commit toutes les modifications du fichier courant:<span>  git commit -a</span></p>
-        <p>Commit la modification qu'on vient d'effectuer: <span> git commit -m "rédiger les modification concision et précision recommandées"</span></p>
-        <p>Changer le dernier commit: (Ne pas modifier le commit publié):<span>  git commit--amend</span></p>
-      </div>
+      <table>
+        <tr><td>Vérifier l'état du projet en local par rapport aux du Repository courant:</td><td><span>  git status</span></td></tr>
+        <tr><td>Changer le fichier courant:</td><td> <span> git diff</span></td></tr>
+        <tr><td>Ajouter toutes les modifications au commit suivant:</td><td><span>git add -A</span></td></tr>
+        <tr><td>Ajouter quelques modifications dans 'file' au commit suivant:</td><td></span>  git add -p nom du fichier</span></td></tr>
+        <tr><td>Commit toutes les modifications du fichier courant:</td><td><span>  git commit -a</span></td></tr>
+        <tr><td>Commit la modification qu'on vient d'effectuer:</td><td> <span>git commit -m "rédiger les modification concision et précision recommandées"</span></td></tr>
+        <tr><td>Changer le dernier commit: (Ne pas modifier le commit publié):</td><td><span>  git commit--amend</span></td></tr>
+      </table>
       <h3>Pour l'historique: log et blame</h3>
-      <div>
-        <p>Afficher tous les commits, en commençant par le plus récent:<span>git log</span></p>
-        <p>Afficher les modifications effectuées sur un fichier en particulier: <span> git log -p nom du fichier</span></p>
-        <p>Affiche l'auteur et le moment d'une modification: <span>git blame nom du fichier</span></p>
-      </div>
+      <table>
+        <tr><td>Afficher tous les commits, en commençant par le plus récent:</td><td><span>git log</span></td><tr>
+        <tr><td>Afficher les modifications effectuées sur un fichier en particulier:</td><td> <span> git log -p nom du fichier</span></td></tr>
+        <tr><td>Affiche l'auteur et le moment d'une modification:</td><td> <span>git blame nom du fichier</span></td></tr>
+      </table>
       <h3>Quant aux branches et balises</h3>
-      <div>
-        <p>Afficher la liste des branches existantes:<span> git branch -av</span></p>
-        <p>Changer de branche: <span> git checkout nom_de_la_branche</span></p>
-        <p>Créer une nouvelle branche à partir de la branche courante: <span> git branch nom de la nouvelle branche</p>
-        <p>Créer une nouvelle branche à partir de la branche du Remote:<span>  git checkout --track nom du remote/nom de la branche</p>
-        <p>Pour supprimer une branche en local:<span> git branch -d nom_de_la_branche</span></p>
-        <p>marquer le commit en courant avec un tag:<span> git tag tag-name</span></p>
-      </div>
+      <table>
+        <tr><td>Afficher la liste des branches existantes:</td><td><span> git branch -av</span></td></tr>
+        <tr><td>Changer de branche:</td><td> <span> git checkout nom_de_la_branche</span></td></tr>
+        <tr><td>Créer une nouvelle branche à partir de la branche courante:</td><td> <span> git branch nom de la nouvelle branche</td></tr>
+        <tr><td>Créer une nouvelle branche à partir de la branche du Remote:</td><td><span>  git checkout --track nom du remote/nom de la branche</td></tr>
+        <tr><td>Pour supprimer une branche en local:</td><td><span> git branch -d nom_de_la_branche</span></td></tr>
+        <tr><td>marquer le commit en courant avec un tag:</td><td><span> git tag tag-name</span></td><tr>
+      </table>
       <h3>Pour les mises à jour et les publications</h3>
-      <div>
-        <p>Afficher la liste de tous les remotes à jour:<span> git remote -v</span></p>
-        <p>Afficher les informations relatives à un remote: <span>git remote show remote-name</span></p>
-        <p>Ajouter un repository nommé remote:<span> git remote add abreviation du nom url</span></p>
-        <p>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD:<span> git fetch nom du remote</span></p>
-        <p>Télécharger tout en fusionnant et intégrant les modifications dans HEAD:<span> git pull nom du remote nom de la branche</span></p>
-        <p>Intégrerles modifications locales dans le remote:<span> git push nom du remote nom_de_la_branche</span></p>
-        <p>Supprimer la branche d'un remote:<span> git branch -dr nom du remote/nom_de_la_branche</span></p>
-        <p>Inserer une balise:<span> git push --tags</span></p>
-      </div>
+      <table>
+        <tr><td>Afficher la liste de tous les remotes à jour:</td><td><span> git remote -v</span></td></tr>
+        <tr><td>Afficher les informations relatives à un remote: </td><td><span>git remote show remote-name</span></td></tr>
+        <tr><td>Ajouter un repository nommé remote:</td><td><span> git remote add abreviation du nom url</span></td></tr>
+        <tr><td>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD:</td><td><span> git fetch nom du remote</span></td></tr>
+        <tr><td>Télécharger tout en fusionnant et intégrant les modifications dans HEAD:</td><td><span> git pull nom du remote nom de la branche</span></td></tr>
+        <tr><td>Intégrerles modifications locales dans le remote:</td><td><span> git push nom du remote nom_de_la_branche</span></td></tr>
+        <tr><td>Supprimer la branche d'un remote:</td><td><span> git branch -dr nom du remote/nom_de_la_branche</span></td></tr>
+        <tr><td>Inserer une balise:</td><td><span> git push --tags</span></td></tr>
+      </table>
       <h3>La fusion et le changement de base</h3>
-      <div>
-        <p>Fusionner une branche à l'intérieur du HEAT courant: <span>git merge nom_de_la_branche</span></p>
-        <p>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):<span> git rebase nom_de_la_branche</span> </p>
-        <p>Abondonner un rebase:<span> git rebase --abort</span></p>
-        <p>Poursuivre une rebase après la résolution d'un conflit:<span> git rebase --continue</span></p>
-        <p>Utiliser l'outil de configuration de fusion pour resoudre un conflit:<span> git mergetool</span></p>
-        <p>Utiliser son éditeur de texte pour résoudre un conflit et par la suite indiquer le fichier comme étant résolu</p>
-      </div>
+      <table>
+        <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td> <span>git merge nom_de_la_branche</span></td></tr>
+        <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
+        <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
+        <tr><td>Poursuivre une rebase après la résolution d'un conflit:</td><td><span> git rebase --continue</span></td></tr>
+        <tr><td>Utiliser l'outil de configuration de fusion pour resoudre un conflit:</td><td><span> git mergetool</span></td></tr>
+        <tr>Utiliser son éditeur de texte pour résoudre un conflit et par la suite indiquer le fichier comme étant résolu</tr>
+      </table>
       <h3>Les annulations</h3>
-      <div>
-        <p>Annuler toutes les modifications de mon dossier courant: <span> git reset --hard HEAD</span></p>
-        <p>Annuler  toutes les modifications accomplies dans un fichier en particulier: <span> git checkout HEAD nom du fichier</span></p>
-        <p>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées): <span> git revert le commit</span></p>
-        <p>Reinitialiser le pointeur du HEAD vers un commit précédent  et ensuite annuler toutes les modifications à partir de ce point: <span> git reset --hard le commit</span></p>
-        <p>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées:<span> git reset --keep le commit</span></li>
-        <p>Idem mais conserver les modifications locale pas encore commit:<span> git reset --keep nom du commit</span></p>
-      </div>
+      <table>
+        <tr><td>Annuler toutes les modifications de mon dossier courant:</td><td> <span> git reset --hard HEAD</span></td></tr>
+        <tr><td>Annuler  toutes les modifications accomplies dans un fichier en particulier:</td><td> <span> git checkout HEAD nom du fichier</span></td></tr>
+        <tr><td>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées):</td><td> <span> git revert le commit</span></td></tr>
+        <tr><td>Reinitialiser le pointeur du HEAD vers un commit précédent  et ensuite annuler toutes les modifications à partir de ce point:</td><td> <span> git reset --hard le commit</span></td></tr>
+        <tr><td>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées:</td><td><span> git reset --keep le commit</span></td></tr>
+        <tr><td>Idem mais conserver les modifications locale pas encore commit:</td><td><span> git reset --keep nom du commit</span></td><tr>
+      </table>
     </div>
     <div class="advices">
       <h2>QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE<h2>
-  <div>
+
     <h3>Simon says:</h3>
       <p>Les commits font état des modifications</p>
       <p>Il est recommandé de les rédiger fréquemment</p>
@@ -106,7 +106,6 @@
       <p>Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
       <p>S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter des surprises ... malencontreuses</span</p>
       <p>Consulter les aides, les "tutorials" et autres ressources en ligne</p>
-  </div>
   </div>
     <div class="root">
     <h2>Sources et plus de documentation</h2>
