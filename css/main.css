@@ -3,7 +3,6 @@ background-size: contain;
 color: #1e90ff;
  }
 body{
-  background-color:darkorange,
   font-family:  Courier, "Lucida Console", monospace;
 }
 .autor_logo{
@@ -13,20 +12,19 @@ body{
   position: relative;
   z-index:1;
   float: left;
-  padding: 3px 13px 9px 9px;
+  padding: 3px 13px 9px 14px;
   color:#1e90ff;
 }
 .cognito{
   position: absolute;
   z-index:2;
   float: left;
-  font-weight: bold;
   padding: 3px 13px 9px 9px;
   color: #ff8c00!important;
   background-color: #1e90ff;
 }
 .logo{
-  margin-top: -25px;
+  margin-top: -5px;
   border: 1px solid #ff8c00;
   position: absolute;
   z-index: 3;
@@ -36,16 +34,56 @@ body{
   transition: transform 4s;
 }
 
-.cognito,.logo{
+.cognito,.helloo{
+  margin-top: 5px;
+  margin-left: 15px;
   border: 1px solid #ff8c00;
+  font-weight: bold;
+
 }
 
 section{
   text-align: center;
   max-width: 85%;
-  margin: 0 auto;
+  margin: -9px auto 0 auto;
   padding: 15px;
-  background-color: seashell;
+  background-color: #FFE;
+}
+section,h1,footer{
+  border:1px solid  #1e90ff;
+}
+h1{
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+}
+h1, footer{
+  background-color:#DADDDE;
+  width: 100%;
+  font: normal, 1.5em, bold, cursive;
+}
+h2,h3{
+  margin-top: 15px;
+}
+h2,.colortext{
+  color: darkorange
+}
+h3{
+  color: #000;
+}
+h3,span,.commande{
+  font-style: italic;
+}
+.conseil{
+  background-color: #e0ffff;
+}
+.commande{
+  color: green;
+}
+.def{
+  color: #1e90ff;
 }
 table{
   border:1px solid darkorange;
@@ -57,11 +95,18 @@ td{
     border:1px solid darkorange;
     padding: 5px;
 }
+.editor{
+  text-align: center;
+}
 span{
   font-weight: bold;
+  color: darkorange;
 }
 .objectif{
   color:darkorange;
+}
+td,.pic{
+  background-color: #FFF;
 }
 .sch{
   max-width: 100%
@@ -72,39 +117,22 @@ color: #1e90ff;
 margin: 0 auto;
 font-weight: normal;
 }
-.def{
-color: darkorange
-}
-h1{
-  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-   color: white;
-   text-align: center;
-   font-style: italic;
-   font-size: 50px;
-}
-h1, footer{
-  background-color:#DADDDE;
-  width: 100%;
-  font: normal, 1.5em, bold, cursive;
-  border:1px solid  #1e90ff;
-}
 img{
   width: 100%;
 
 }
 .pic{
   margin: 0 auto;
-  border-width: thin;
-  border:medium solid  #1e90ff;
-  background-color: #e6e6fa;
+  border: 1px solid #1e90ff;
 }
 .root{
-  border-width: thin;
-border:medium solid  #1e90ff;
-background-color:  #e6e6fa;
-text-align: center;
-padding:5%
-margin:0 auto;
+  border-width: 1px solid #e6e6fa;
+  text-align: center;
+  padding:5%
+  margin:0 auto;
+}
+.references{
+  font-size: 0.8rem;
 }
 ul{
   display: flex;
