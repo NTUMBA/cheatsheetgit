@@ -1,0 +1,185 @@
+[33mcommit 810d1e9a7eda42251415c06d87a2495b1083df8f[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed May 23 04:56:45 2018 +0200
+
+    Adding text and fixing content's size
+
+[33mcommit 605e19c9d1528a5f19ae74e9cc228f841ca7f191[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun May 20 20:20:55 2018 +0200
+
+    Adding bootstrap
+
+[33mcommit 4d6d01936fe55a07017dcb5435eea0a661ecad93[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun May 20 19:57:57 2018 +0200
+
+    Adding js, logo and fixing text
+
+[33mcommit a851cf1afa352d35ef0e6565920d976513b53eb6[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun May 20 02:16:18 2018 +0200
+
+    Adding tables
+
+[33mcommit 97ac6e5e3269698e119e3c30f836129e7cda235d[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun May 20 01:17:24 2018 +0200
+
+    Fixing text
+
+[33mcommit 42e287203b1f6c23599879ab9140a1bbe5aa7f89[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun May 20 01:11:50 2018 +0200
+
+    Adding text
+
+[33mcommit 1b01cde271f0e14aa99189192172ff56cbc780d4[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sat May 19 23:25:15 2018 +0200
+
+    Adding text
+
+[33mcommit 07cc8e870003887815e3f2ea2ab63311fc7abfb6[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sat May 19 23:09:42 2018 +0200
+
+    Deleting background image
+
+[33mcommit b8d212e81c0a0410ace23a65fcf4b047e3b3f604[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sat May 19 23:06:09 2018 +0200
+
+    Fixing responsivity, content colors
+
+[33mcommit 162e3c35f42edef75f7659e8e39c5bd49dec4763[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Mon Jun 27 14:18:01 2016 +0200
+
+    Add c to shéma and fixe responsivity (schema)
+
+[33mcommit df0cd8d0aa018a951f875235e2ff65a84df61ed6[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Mon Jun 27 11:57:13 2016 +0200
+
+    Add text into source and into schema and fixe them by changing them to links
+
+[33mcommit 74d60eb8bc1f8a1a2be4a3a11a838e591b52f609[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 20:15:59 2016 +0200
+
+    Add h2 title to the picture
+
+[33mcommit 37db13709b297ea45b0e999b93fb192f24a54c6b[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 20:12:38 2016 +0200
+
+    Add img border,change advz color and fixe root position
+
+[33mcommit 707d5c11158968e0ab5eb6828466841b0b1465c1[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 19:33:07 2016 +0200
+
+    Add source and img
+
+[33mcommit a4b3a086c3051f3a0ba43478ea837f855b93c02f[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 19:14:24 2016 +0200
+
+    Fixe h1 closing tag. Change def color
+
+[33mcommit 86b71bac20ddb70fb281225ccca9239b6703a55f[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 18:53:11 2016 +0200
+
+    Previously, fixe sentences in advz.Fixe h1 police and and div def
+
+[33mcommit c49521ed86e96aab2b89097a4e080896be198963[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 18:40:20 2016 +0200
+
+    change advz to ol and to lowercase and move the previous background image there
+
+[33mcommit 1e097c2a928c025ba453cd9a9e8c558d80df4b6f[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 18:07:15 2016 +0200
+
+    Add a h1 and change all h level. Fixe body font-familly and back-ground-color
+
+[33mcommit cef3f9335ca331277d05acd0c04c44cfac99810a[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 17:43:38 2016 +0200
+
+    Add link to css file, insert one back-ground color and one div class
+
+[33mcommit 2cf6680a0e2754225e7c718606920c4cfabd5487[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Sun Jun 26 17:25:43 2016 +0200
+
+    Add css file
+
+[33mcommit 317b2380ded4fd9a7a1ea80c0554a62c169ca7d3[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 15:46:30 2016 +0200
+
+    Below the last h1 tag (Quelques conseils utiles pour...), inside the first h2 tag i delete the word concernent
+
+[33mcommit e58a1594ea59916846e9d7fd5c768ceefb3e1a45[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 15:13:51 2016 +0200
+
+    Actually, i had insert 7 h2 texts préviously. Now, i explain each h2 by adding an ul with text inside li tags (below the h1 tag:Les commandes les plus importantes)
+
+[33mcommit 8042fdc329f49ffb9ca37eb10b5e0bb9805bb907[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 12:12:44 2016 +0200
+
+    I add 9 head-lines into h2 tags below the last h1 text
+
+[33mcommit 8adc7f8cb2442c3cadf9db17ede294c23946e08c[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 11:56:40 2016 +0200
+
+    I have add 8 text into corresponding h2 tag below the second h1 text
+
+[33mcommit 271eba81d78cf0670ceb9d6164408e3376d92eb4[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 11:21:34 2016 +0200
+
+    I have add 2 texts into h1 tag below the third paragraph
+
+[33mcommit c3eef336d030ff26a9039b0052b658a32755775c[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 11:17:00 2016 +0200
+
+    I insert a third paragraph
+
+[33mcommit a9a33dd41087ef13c2f2d1c655fd29ae4cf50714[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 10:47:06 2016 +0200
+
+    I insert a second paragraph
+
+[33mcommit 49b397e90c852e6ee21fe4f1146451cded6d64a6[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 10:37:44 2016 +0200
+
+    I fixe the previous paragraph by adding GIT
+
+[33mcommit bd820f1d774c17183187b1092f78a2102142b10d[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 10:35:20 2016 +0200
+
+    Inside body, i write a h1 text and is paragraph
+
+[33mcommit b6385b515554bd05007f3ffcd91d399b2c278d56[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Wed Jun 22 10:25:42 2016 +0200
+
+    I write a title inside the head tag
+
+[33mcommit ec33a8f589fc142d3f15dfe0581a0835173b91a2[m
+Author: NTUMBA <cityzenmboma@yahoo.fr>
+Date:   Tue Jun 21 19:16:21 2016 +0200
+
+    I creat a html file named index
