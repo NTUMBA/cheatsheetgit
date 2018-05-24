@@ -66,11 +66,12 @@ footer{
     border-top: 1px solid  #1e90ff;
 }
 h1{
+  padding: 6px;
   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
   color: white;
   text-align: center;
   font-style: italic;
-  font-size: 1.9rem;
+  font-size: 2.1rem;
 }
 h1, footer{
   background-color:#DADDDE;
@@ -78,10 +79,9 @@ h1, footer{
   font: normal, 1.5em, bold, cursive;
 }
 h3{
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 h2,h3,h4{
-  margin-top: 5px;
   color: #FFE;
 }
 .colortext{
@@ -100,6 +100,7 @@ h3,span,.commande{
 .detail{
   color: #1e90ff;
   background-color: #FFE;
+  opacity:0.7;
 }
 .def{
   font-weight: bold;
@@ -115,7 +116,7 @@ table,.conseil{
 }
 table{
   border-collapse: collapse;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   background-color: #FFE;
   opacity: 0.8;
   text-align: center;
