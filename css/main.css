@@ -1,12 +1,22 @@
-.matrix{
-background-size: contain;
-color: #1e90ff;
- }
 body{
   font-family:  Courier, "Lucida Console", monospace;
+  background-image: url("../img/biblio.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+header{
+  background-color: #ff8c00;
+  border-bottom: 1px solid  #1e90ff;
+}
+img{
+  max-width: 100%;
+}
+.icone{
+  margin-left: 30px;
 }
 .autor_logo{
-  padding: 1%;
+  margin-right: 5px;
 }
 .helloo{
   position: relative;
@@ -19,126 +29,145 @@ body{
   position: absolute;
   z-index:2;
   float: left;
-  padding: 3px 13px 9px 9px;
+  padding: 3px 18px 9px 9px;
   color: #ff8c00!important;
   background-color: #1e90ff;
 }
 .logo{
-  margin-top: -5px;
-  border: 1px solid #ff8c00;
+  margin-top: -2px;
+  margin-left: -45px;
+  border: 1px solid #1e90ff;
   position: absolute;
   z-index: 3;
   float: left;
-  padding-left: 8px;
-  max-width: 140px;
+  padding-left: 1px;
+  max-width: 130px;
   transition: transform 4s;
 }
 
 .cognito,.helloo{
   margin-top: 5px;
-  margin-left: 15px;
-  border: 1px solid #ff8c00;
+  margin-right: 20px;
+  border: 1px solid #FFE;
   font-weight: bold;
 
 }
 
 section{
   text-align: center;
-  max-width: 85%;
+  max-width: 95%;
   margin: -9px auto 0 auto;
   padding: 15px;
-  background-color: #FFE;
 }
-section,h1,footer{
+footer{
   border:1px solid  #1e90ff;
+}
+footer{
+    border-top: 1px solid  #1e90ff;
 }
 h1{
   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
   color: white;
   text-align: center;
   font-style: italic;
-  font-size: 50px;
+  font-size: 1.9rem;
 }
 h1, footer{
   background-color:#DADDDE;
   width: 100%;
   font: normal, 1.5em, bold, cursive;
 }
-h2,h3{
-  margin-top: 15px;
-}
-h2,.colortext{
-  color: darkorange
-}
 h3{
-  color: #000;
+  font-size: 1.3rem;
 }
+h2,h3,h4{
+  margin-top: 5px;
+  color: #FFE;
+}
+.colortext{
+  color: darkorange;
+}
+
 h3,span,.commande{
   font-style: italic;
 }
 .conseil{
-  background-color: #e0ffff;
+  background-color: darkorange;
 }
 .commande{
   color: green;
 }
-.def{
+.detail{
   color: #1e90ff;
+  background-color: #FFE;
+}
+.def{
+  font-weight: bold;
+}
+.def,.ligneTop{
+  color: #FFE;
+}
+.ligneTop{
+  background-color: #1e90ff;
+}
+table,.conseil{
+  border:1px solid darkorange;
 }
 table{
-  border:1px solid darkorange;
   border-collapse: collapse;
-  text-align: left;
-  margin:0 auto;
+  font-size: 1.3rem;
+  background-color: #FFE;
+  opacity: 0.8;
+  text-align: center;
 }
 td{
     border:1px solid darkorange;
-    padding: 5px;
+    padding: 2px;
 }
-.editor{
-  text-align: center;
-}
+
 span{
   font-weight: bold;
-  color: darkorange;
+  font-size: 0.9rem;
 }
 .objectif{
   color:darkorange;
 }
-td,.pic{
-  background-color: #FFF;
+.pic,.advices{
+  background-color: #FFD;
+  opacity: 0.8;
 }
 .sch{
   max-width: 100%
-  margin: 0 auto;
 }
 .advices{
 color: #1e90ff;
-margin: 0 auto;
 font-weight: normal;
 }
-img{
-  width: 100%;
-
-}
-.pic{
+table,ul,.sch,.advices,.pic,.root{
   margin: 0 auto;
+}
+
+.pic{
   border: 1px solid #1e90ff;
+  max-width: 70%;
 }
 .root{
   border-width: 1px solid #e6e6fa;
   text-align: center;
-  padding:5%
-  margin:0 auto;
+  padding:5px;
 }
 .references{
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.references a{
+  color:#e6e6fa;
+  text-decoration: none;
 }
 ul{
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin: 0 auto;
   padding: 2px 20px;
   text-decoration: none;
 }
@@ -156,6 +185,12 @@ height: 45px;
 
 .logo:hover{
   transform: rotate(360deg) translate(0px, 50px);
+}
+.references a:hover{
+  font-size: 1.0rem;
+  padding: 3px;
+  color:darkorange;
+  background-color: #1e90ff;
 }
 
 

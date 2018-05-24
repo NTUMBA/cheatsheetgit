@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Cheatsheet GIT | HOME</title>
+    <title>Cheatsheet GIT | MISE A JOUR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -31,11 +31,11 @@
       <div class="collapse" id="exCollapsingNavbar">
           <div class="bg-inverse p-a-1 nav nav-tabs">
              <h4>Collapsed content</h4>
-             <span class="text-muted nav-item"><a href="index.html" class="nav-link active">HOME</a></span>
+             <span class="text-muted nav-item"><a href="index.html" class="nav-link">HOME</a></span>
              <span class="text-muted nav-item"><a href="createReset.html" class="nav-link">CREATION</span>
-             <span class="text-muted nav-item"><a href="branchLog.html" class="nav-link "> BRANCHES ET VERSIONS</a></span>
+             <span class="text-muted nav-item"><a href="branchLog.html" class="nav-link"> BRANCHES ET VERSIONS</a></span>
              <span class="text-muted nav-item"><a href="mergeRebase.html" class="nav-link">FUSION ET BASE</a></span>
-              <span class="text-muted nav-item"><a href="update.html" class="nav-link">MISE A JOUR</a></span>
+              <span class="text-muted nav-item"><a href="update.html" class="nav-link active">MISE A JOUR</a></span>
           </div>
       </div>
     </nav>
@@ -43,7 +43,7 @@
     <nav id="up" class="hidden-sm-down ">
         <ul class="nav nav-tabs colortext">
           <li class="nav-item color_list">
-          <a href="index.html" class="nav-link active">HOME</a>
+          <a href="index.html" class="nav-link">HOME</a>
           </li>
           <li class="color_list nav-item">
           <a href="createReset.html" class="nav-link">CREATION</a>
@@ -55,65 +55,27 @@
           <a href="mergeRebase.html" class="nav-link">FUSION ET BASE</a>
           </li>
           <li class="color_list nav-item">
-          <a href="update.html" class="nav-link">MISE A JOUR</a>
+          <a href="update.html" class="nav-link active">MISE A JOUR</a>
           </li>
         </ul>
     </nav>
    </header>
-
   <h1>CHEATSHEET GIT</h1>
   <section>
 
-    <h2 class="definition">DEFINITION</h2>
-        <p class="def">GIT est un logiciel de gestion de versions en mode distribué</p>
-        <div class="detail">
-
-          <p>Il s'agit d'un outil très pratique. En effet, il est très facile à apprendre
-            et incontournable aussi bien pour de grands projets  que pour ceux à
-            ambition plus modeste.
-            Il est bien plus performant que les outils SCM comme Subversion eu égard aux
-            fonctions permettant des ramifications.</p>
-            <p>
-              Dans tout processus de développement, la ligne de commande, à un moment donné,
-              s'avère indispensable.
-              Il n'est pas évident de mémoriser toutes ces commandes même les plus importantes,
-              c'est pourquoi on peut, en cas de besoin, recourir
-              à ce document structuré de sorte qu'il soit lisible, compréhensible et confortable
-              à consulter.</p>
-        </div>
-    </div>
-      <div class="sch">
-        <h2>Schéma</h2>
-      </div>
-      <div class="pic">
-           <a href="https://community.kde.org/"> <img src="https://community.kde.org/images.community/2/23/Kde-git-workflow.svg"/></a>
-      </div>
-    <div class="advices">
-      <h2 class="conseil">QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE<h2>
-        <div class="memento">
-          <h3>Pour bien commencer, les commandes à retenir: </h3>
-          <p class="commande">git init</p>
-          <p class="commande">git clone ssh (ou http) ...</p>
-          <p class="commande">git add -A  </p>
-          <p class="commande">git commit -m "First commit ou updates ..."</p>
-        </div>
-    <h3>Simon says:</h3>
-      <p>Les commits font état des modifications</p>
-      <p>Il est recommandé de les rédiger fréquemment</p>
-      <p>Eviter de commit des tâches non abouties</p>
-      <p>Tester les codes avant de commit les actions</p>
-      <p>Les messages liés aux commits doivent être concis, précis et pertinents</p>
-      <p>Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
-      <p>S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter quelque surprise ...</span</p>
-      <p>Consulter les aides, les "tutorials" et autres ressources en ligne</p>
-  </div>
-    <div class="root references ">
-    <h4>Sources et plus de documentation</h4>
-
-        <p><a href="https://www.git-tower.com/blog/git-cheat-sheet/">git-tower.com</a></p>
-        <p><a href="http://stackoverflow.com"> How can I reconcile detached HEAD with master/origin</a></p>
-        <p><a href="https://community.kde.org">KDE Community Wiki</a></p>
-      </div>
+      <h3>Pour les mises à jour et les publications</h3>
+      <table>
+        <tr><td>Afficher la liste de tous les remotes à jour:</td><td><span> git remote -v</span></td></tr>
+        <tr><td>Afficher les informations relatives à un remote: </td><td><span>git remote show remote-name</span></td></tr>
+        <tr><td>Ajouter un repository nommé remote:</td><td><span> git remote add abreviation_de_l_url</span></td></tr>
+        <tr><td>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD:</td><td><span> git fetch nom_du_remote</span></td></tr>
+        <tr><td>Télécharger tout en fusionnant et intégrant les modifications dans HEAD:</td><td class="ligneTop"><span> git pull nom_du_remote nom_de_la_branche</span></td></tr>
+        <tr><td>Intégrerles modifications locales dans le remote:</td><td><span> git push nom_du_remote nom_de_la_branche</span></td></tr>
+        <tr><td>Concrètement, suite aux commandes add et commit, insérer ses modifications sur sa branche de travail</td><td class="ligneTop"><span>  git push origin nom_sa_branche</span></td></tr>
+        <tr><td>Supprimer la branche d'un remote:</td><td><span> git branch -dr nom_du_remote/nom_de_la_branche</span></td></tr>
+        <tr><td>Inserer une balise:</td><td><span> git push --tags</span></td></tr>
+        <tr><td colspan="2">Désigner dans l'équipe une personne chargée de gérer les "pull requests"</td></tr>
+      </table>
 
   </section>
 
