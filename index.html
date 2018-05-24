@@ -17,7 +17,6 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-
   <div class="helloo">
     HELLO
   </div>
@@ -29,121 +28,115 @@
   <h1>CHEATSHEET GIT</h1>
   <section>
     <div >
-    <h2>DEFINITION</h2>
-    <p class="def">GIT est un logiciel de gestion de versions en mode distribué</p>
-    <p>Il s'agit d'un outil très pratique. En effet, il est très facile à apprendre
-      et incontournable aussi bien pour de grands projets  que pour ceux à
-      ambition plus modeste.
-      Il est bien plus performant que les outils SCM comme Subversion eu égard aux
-      fonctions permettant des ramifications.</p>
-      <p>
-      Dans tout processus de développement, la ligne de commande, à un moment donné,
-      s'avère indispensable.
-      Il n'est pas évident de mémoriser toutes ces commandes même les plus importantes,
-      c'est pourquoi on peut, en cas de besoin, recourir
-      à ce document structuré de sorte qu'il soit lisible, compréhensible et confortable
-      à consulter.
+        <h2>DEFINITION</h2>
+        <p class="def">GIT est un logiciel de gestion de versions en mode distribué</p>
+        <p>Il s'agit d'un outil très pratique. En effet, il est très facile à apprendre
+          et incontournable aussi bien pour de grands projets  que pour ceux à
+          ambition plus modeste.</p>
+          <p>Il est bien plus performant que les outils SCM comme Subversion eu égard aux
+          fonctions permettant des ramifications.</p>
+          <p>Dans tout processus de développement, la ligne de commande, à un moment donné,
+          s'avère indispensable.</p>
+          <p>Il n'est pas évident de mémoriser toutes ces commandes même les plus importantes,
+          c'est pourquoi on peut, en cas de besoin, recourir
+          à ce document structuré de sorte qu'il soit lisible, compréhensible et confortable
+          à consulter.</p>
     </div>
-      </p>
       <div class="sch">
         <h2>Schéma</h2>
       </div>
       <div class="pic">
-           <a href="https://community.kde.org/"> <img src="https://community.kde.org/images.community/2/23/Kde-git-workflow.svg"/></a>
+          <a href="https://community.kde.org/"> <img src="https://community.kde.org/images.community/2/23/Kde-git-workflow.svg"/></a>
       </div>
       <div class="matrix">
-      <h2>LES COMMANDES LES PLUS IMPORTANTES</h2>
-      <h3>Les commandes relatives à la création</h3>
-      <table>
-        <tr><td>Pour clôner un repository entendez projet (dossier -folder-) existant:</td><td class="conseil"><span> git clone ssh(ou http)://user@domain.com/NomDuRepository.git</span> </td></tr>
-        <tr><td>Pour créer un nouvel endroit de Repository (initialiser un dossier):</td><td class="conseil"> <span> git init</span></td></tr>
-      </table>
-      <h3>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h3>
-      <table>
-        <tr><td>Vérifier l'état du projet en local par rapport au Repository courant:</td><td class="conseil"><span>  git status</span></td></tr>
-        <tr><td>Changer le fichier courant:</td><td> <span> git diff</span></td></tr>
-        <tr><td>Ajouter toutes les modifications au commit suivant:</td><td class="conseil"><span>git add -A</span></td></tr>
-        <tr><td>Ajouter quelques modifications dans 'file' au commit suivant:</td><td><span>  git add -p nom_du_fichier</span></td></tr>
-        <tr><td>Commit toutes les modifications du fichier courant:</td><td><span>  git commit -a</span></td></tr>
-        <tr><td>Commit la modification qu'on vient d'effectuer:</td><td class="conseil"> <span>git commit -m "rédiger les modification concision et précision recommandées"</span></td></tr>
-        <tr><td>Changer le dernier commit: (Ne pas modifier le commit publié):</td><td><span>  git commit--amend</span></td></tr>
-      </table>
-      <h3>Pour l'historique: log et blame</h3>
-      <table>
-        <tr><td>Afficher tous les commits, en commençant par le plus récent:</td><td class="conseil"><span>git log</span></td><tr>
-        <tr><td>Afficher les modifications effectuées sur un fichier en particulier:</td><td> <span> git log -p nom_du_fichier</span></td></tr>
-        <tr><td>Affiche l'auteur et le moment d'une modification:</td><td> <span>git blame nom_du_fichier</span></td></tr>
-      </table>
-      <h3>Quant aux branches et balises</h3>
-      <table>
-        <tr><td>Afficher la liste des branches existantes:</td><td><span> git branch -av</span></td></tr>
-        <tr><td>Changer de branche:</td><td class="conseil"> <span> git checkout nom_de_la_branche</span></td></tr>
-        <tr><td>Créer une nouvelle branche à partir de la branche courante:</td><td class="conseil"> <span> git branch nom_de_la_nouvelle_branche</td></tr>
-        <tr><td>Créer une nouvelle branche à partir de la branche du Remote:</td><td><span>  git checkout --track nom_du_remote/nom_de_la_branche</td></tr>
-        <tr><td>Pour supprimer une branche en local:</td><td><span> git branch -d nom_de_la_branche</span></td></tr>
-        <tr><td>marquer le commit en cours avec un tag:</td><td><span> git tag tag-name</span></td><tr>
-      </table>
-      <h3>Pour les mises à jour et les publications</h3>
-      <table>
-        <tr><td>Afficher la liste de tous les remotes à jour:</td><td><span> git remote -v</span></td></tr>
-        <tr><td>Afficher les informations relatives à un remote: </td><td><span>git remote show remote-name</span></td></tr>
-        <tr><td>Ajouter un repository nommé remote:</td><td><span> git remote add abreviation_de_l_url</span></td></tr>
-        <tr><td>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD:</td><td><span> git fetch nom_du_remote</span></td></tr>
-        <tr><td>Télécharger tout en fusionnant et intégrant les modifications dans HEAD:</td><td class="conseil"><span> git pull nom_du_remote nom_de_la_branche</span></td></tr>
-        <tr><td>Intégrerles modifications locales dans le remote:</td><td><span> git push nom_du_remote nom_de_la_branche</span></td></tr>
-          <tr><td>Concrètement, suite aux commandes add et commit, insérer ses modifications sur sa branche de travail</td><td class="conseil"><span>  git push origin nom_sa_branche</span></td></tr>
-        <tr><td>Supprimer la branche d'un remote:</td><td><span> git branch -dr nom_du_remote/nom_de_la_branche</span></td></tr>
-        <tr><td>Inserer une balise:</td><td><span> git push --tags</span></td></tr>
-                <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de gérer les "pull requests"</td></tr>
-      </table>
-      <h3>La fusion et le changement de base</h3>
-      <table>
-        <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td class="conseil"> <span>git merge nom_de_la_branche</span></td></tr>
-        <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
-        <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
-        <tr><td>Poursuivre une rebase après la résolution d'un conflit:</td><td><span> git rebase --continue</span></td></tr>
-        <tr><td>Utiliser l'outil de configuration de fusion pour resoudre un conflit:</td><td><span> git merge tool</span></td></tr>
-        <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de résoudre, via un éditeur de texte, d'éventuel conflit</td></tr>
-      </table>
-      <h3>Les annulations</h3>
-      <table>
-        <tr><td>Annuler toutes les modifications de mon dossier courant:</td><td> <span> git reset --hard HEAD</span></td></tr>
-        <tr><td>Annuler  toutes les modifications accomplies dans un fichier en particulier:</td><td> <span> git checkout HEAD nom_du_fichier</span></td></tr>
-        <tr><td>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées):</td><td> <span> git revert le_commit</span></td></tr>
-        <tr><td>Reinitialiser le pointeur du HEAD vers un commit précédent  et ensuite annuler toutes les modifications à partir de ce point:</td><td> <span> git reset --hard le_commit</span></td></tr>
-        <tr><td>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées:</td><td><span> git reset --keep le_commit</span></td></tr>
-        <tr><td>Idem mais conserver les modifications locale pas encore commit:</td><td><span> git reset --keep nom_du_commit</span></td><tr>
-      </table>
+          <h2>LES COMMANDES LES PLUS IMPORTANTES</h2>
+          <h3>Les commandes relatives à la création</h3>
+          <table>
+            <tr><td>Pour clôner un repository entendez projet (dossier -folder-) existant:</td><td class="conseil"><span> git clone ssh(ou http)://user@domain.com/NomDuRepository.git</span> </td></tr>
+            <tr><td>Pour créer un nouvel endroit de Repository (initialiser un dossier):</td><td class="conseil"> <span> git init</span></td></tr>
+          </table>
+          <h3>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h3>
+          <table>
+            <tr><td>Vérifier l'état du projet en local par rapport au Repository courant:</td><td class="conseil"><span>  git status</span></td></tr>
+            <tr><td>Changer le fichier courant:</td><td> <span> git diff</span></td></tr>
+            <tr><td>Ajouter toutes les modifications au commit suivant:</td><td class="conseil"><span>git add -A</span></td></tr>
+            <tr><td>Ajouter quelques modifications dans 'file' au commit suivant:</td><td><span>  git add -p nom_du_fichier</span></td></tr>
+            <tr><td>Commit toutes les modifications du fichier courant:</td><td><span>  git commit -a</span></td></tr>
+            <tr><td>Commit la modification qu'on vient d'effectuer:</td><td class="conseil"> <span>git commit -m "rédiger les modification concision et précision recommandées"</span></td></tr>
+            <tr><td>Changer le dernier commit: (Ne pas modifier le commit publié):</td><td><span>  git commit--amend</span></td></tr>
+          </table>
+          <h3>Pour l'historique: log et blame</h3>
+          <table>
+            <tr><td>Afficher tous les commits, en commençant par le plus récent:</td><td class="conseil"><span>git log</span></td><tr>
+            <tr><td>Afficher les modifications effectuées sur un fichier en particulier:</td><td> <span> git log -p nom_du_fichier</span></td></tr>
+            <tr><td>Affiche l'auteur et le moment d'une modification:</td><td> <span>git blame nom_du_fichier</span></td></tr>
+          </table>
+          <h3>Quant aux branches et balises</h3>
+          <table>
+            <tr><td>Afficher la liste des branches existantes:</td><td><span> git branch -av</span></td></tr>
+            <tr><td>Changer de branche:</td><td class="conseil"> <span> git checkout nom_de_la_branche</span></td></tr>
+            <tr><td>Créer une nouvelle branche à partir de la branche courante:</td><td class="conseil"> <span> git branch nom_de_la_nouvelle_branche</td></tr>
+            <tr><td>Créer une nouvelle branche à partir de la branche du Remote:</td><td><span>  git checkout --track nom_du_remote/nom_de_la_branche</td></tr>
+            <tr><td>Pour supprimer une branche en local:</td><td><span> git branch -d nom_de_la_branche</span></td></tr>
+            <tr><td>marquer le commit en cours avec un tag:</td><td><span> git tag tag-name</span></td><tr>
+          </table>
+          <h3>Pour les mises à jour et les publications</h3>
+          <table>
+            <tr><td>Afficher la liste de tous les remotes à jour:</td><td><span> git remote -v</span></td></tr>
+            <tr><td>Afficher les informations relatives à un remote: </td><td><span>git remote show remote-name</span></td></tr>
+            <tr><td>Ajouter un repository nommé remote:</td><td><span> git remote add abreviation_de_l_url</span></td></tr>
+            <tr><td>Télécharger toutes les modifications effectuées sur remote sans celles du HEAD:</td><td><span> git fetch nom_du_remote</span></td></tr>
+            <tr><td>Télécharger tout en fusionnant et intégrant les modifications dans HEAD:</td><td class="conseil"><span> git pull nom_du_remote nom_de_la_branche</span></td></tr>
+            <tr><td>Intégrerles modifications locales dans le remote:</td><td><span> git push nom_du_remote nom_de_la_branche</span></td></tr>
+            <tr><td>Concrètement, suite aux commandes add et commit, insérer ses modifications sur sa branche de travail</td><td class="conseil"><span>  git push origin nom_sa_branche</span></td></tr>
+            <tr><td>Supprimer la branche d'un remote:</td><td><span> git branch -dr nom_du_remote/nom_de_la_branche</span></td></tr>
+            <tr><td>Inserer une balise:</td><td><span> git push --tags</span></td></tr>
+            <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de gérer les "pull requests"</td></tr>
+          </table>
+          <h3>La fusion et le changement de base</h3>
+          <table>
+            <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td class="conseil"> <span>git merge nom_de_la_branche</span></td></tr>
+            <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
+            <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
+            <tr><td>Poursuivre une rebase après la résolution d'un conflit:</td><td><span> git rebase --continue</span></td></tr>
+            <tr><td>Utiliser l'outil de configuration de fusion pour resoudre un conflit:</td><td><span> git merge tool</span></td></tr>
+            <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de résoudre, via un éditeur de texte, d'éventuel conflit</td></tr>
+          </table>
+          <h3>Les annulations</h3>
+          <table>
+            <tr><td>Annuler toutes les modifications de mon dossier courant:</td><td> <span> git reset --hard HEAD</span></td></tr>
+            <tr><td>Annuler  toutes les modifications accomplies dans un fichier en particulier:</td><td> <span> git checkout HEAD nom_du_fichier</span></td></tr>
+            <tr><td>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées):</td><td> <span> git revert le_commit</span></td></tr>
+            <tr><td>Reinitialiser le pointeur du HEAD vers un commit précédent  et ensuite annuler toutes les modifications à partir de ce point:</td><td> <span> git reset --hard le_commit</span></td></tr>
+            <tr><td>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées:</td><td><span> git reset --keep le_commit</span></td></tr>
+            <tr><td>Idem mais conserver les modifications locale pas encore commit:</td><td><span> git reset --keep nom_du_commit</span></td><tr>
+          </table>
     </div>
     <div class="advices">
-      <h2 class="conseil">QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE<h2>
+        <h2 class="conseil">QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE<h2>
         <div class="memento">
           <h3>Pour bien commencer, les commandes à retenir: </h3>
           <p class="commande">git init</p>
           <p class="commande">git clone ssh (ou http) ...</p>
           <p class="commande">git add -A  </p>
           <p class="commande">git commit -m "First commit ou updates ..."</p>
-
         </div>
-
-    <h3>Simon says:</h3>
-      <p>Les commits font état des modifications</p>
-      <p>Il est recommandé de les rédiger fréquemment</p>
-      <p>Eviter de commit des tâches non abouties</p>
-      <p>Tester les codes avant de commit les actions</p>
-      <p>Les messages liés aux commits doivent être concis, précis et pertinents</p>
-      <p>Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
-      <p>S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter quelque surprise ...</span</p>
-      <p>Consulter les aides, les "tutorials" et autres ressources en ligne</p>
-  </div>
+        <h3>Simon says:</h3>
+          <p>Les commits font état des modifications</p>
+          <p>Il est recommandé de les rédiger fréquemment</p>
+          <p>Eviter de commit des tâches non abouties</p>
+          <p>Tester les codes avant de commit les actions</p>
+          <p>Les messages liés aux commits doivent être concis, précis et pertinents</p>
+          <p>Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
+          <p>S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter quelque surprise ...</span</p>
+          <p>Consulter les aides, les "tutorials" et autres ressources en ligne</p>
+    </div>
     <div class="root references">
-    <h4>Sources et plus de documentation</h4>
-
-        <p><a href="https://www.git-tower.com/blog/git-cheat-sheet/">git-tower.com</a></p>
-        <p><a href="http://stackoverflow.com"> How can I reconcile detached HEAD with master/origin</a></p>
-        <p><a href="https://community.kde.org">KDE Community Wiki</a></p>
-      </div>
-
+        <h4>Sources et plus de documentation</h4>
+            <p><a href="https://www.git-tower.com/blog/git-cheat-sheet/">git-tower.com</a></p>
+            <p><a href="http://stackoverflow.com"> How can I reconcile detached HEAD with master/origin</a></p>
+            <p><a href="https://community.kde.org">KDE Community Wiki</a></p>
+    </div>
   </section>
 
 <footer class="color_list">
