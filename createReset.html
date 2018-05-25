@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cheatsheet GIT | CREATION</title>
-    <meta name="description" content="">
+    <meta name="description" content="tutorial git">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="img/rsz_daktyla.jpg">
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" href="img/rsz_daktyla.jpg">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -27,20 +27,10 @@
       </div>
       <div class="hidden-sm-down logo"> <img src="img/rsz_daktyla.jpg" alt="logo" /></div>
     </div>
-    <nav class="navbar navbar-light bg-faded hidden-md-up decofont">
-      <div class="collapse" id="exCollapsingNavbar">
-          <div class="bg-inverse p-a-1 nav nav-tabs">
-             <h4>Collapsed content</h4>
-             <span class="text-muted nav-item"><a href="index.html" class="nav-link">HOME</a></span>
-             <span class="text-muted nav-item"><a href="createReset.html" class="nav-link active">CREATION</span>
-             <span class="text-muted nav-item"><a href="branchLog.html" class="nav-link"> BRANCHES ET VERSIONS</a></span>
-             <span class="text-muted nav-item"><a href="mergeRebase.html" class="nav-link">FUSION ET BASE</a></span>
-              <span class="text-muted nav-item"><a href="update.html" class="nav-link">MISE A JOUR</a></span>
-          </div>
-      </div>
-    </nav>
+    <nav class="navbar navbar-light bg-faded ">
+
     <!--nav bar starts=========================================================  -->
-    <nav id="up" class="hidden-sm-down ">
+    <nav class="hidden-sm-down ">
         <ul class="nav nav-tabs colortext">
           <li class="nav-item color_list">
           <a href="index.html" class="nav-link">HOME</a>
@@ -52,15 +42,19 @@
           <a href="branchLog.html" class="nav-link">BRANCHES ET VERSIONS</a>
           </li>
           <li class="color_list nav-item">
-          <a href="mergeRebase.html" class="nav-link">FUSION ET BASE</a>
-          </li>
-          <li class="color_list nav-item">
-          <a href="update.html" class="nav-link">MISE A JOUR</a>
+          <a href="update.html" class="nav-link">MISE A JOUR ET FUSION</a>
           </li>
         </ul>
     </nav>
    </header>
-  <h1>CHEATSHEET GIT</h1>
+   <h1>CHEATSHEET GIT</h1>
+   <ul class="lateralnav hidden-md-up ">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="createReset.html">CREATION</li>
+            <li><a href="branchLog.html" > BRANCHES</a></li>
+             <li><a href="update.html" >UPDATE ET FUSION</a></li>
+         </ul>
+   </div>
   <section>
 
       <h3>Les commandes relatives à la création</h3>
@@ -88,7 +82,7 @@
         <tr><td>Idem que précédement mais cette fois-ci conserver toutes les modifications en tant que modifications non indexées:</td><td><span> git reset --keep le_commit</span></td></tr>
         <tr><td>Idem mais conserver les modifications locale pas encore commit:</td><td><span> git reset --keep nom_du_commit</span></td><tr>
       </table>
-  
+
   </section>
 
 <footer class="color_list">
