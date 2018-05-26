@@ -114,6 +114,7 @@ img{
 }
 .icone{
   margin-left: 30px;
+  text-align: center;
 }
 .autor_logo{
   margin-right: 5px;
@@ -121,41 +122,39 @@ img{
 .helloo{
   position: relative;
   z-index:1;
-  float: left;
-  padding: 3px 13px 9px 14px;
   color:#1e90ff;
 }
 .cognito{
   position: absolute;
   z-index:2;
-  float: left;
-  padding: 3px 18px 9px 9px;
   color: #ff8c00!important;
   background-color: #1e90ff;
 }
 .logo{
   margin-top: -2px;
-  margin-left: -45px;
+  margin-left: -40px;
   border: 1px solid #1e90ff;
   position: absolute;
   z-index: 3;
-  float: left;
   padding-left: 1px;
   max-width: 130px;
   transition: transform 3s;
 }
 
 .cognito,.helloo{
-  margin-top: 5px;
-  margin-right: 20px;
+  width: 90px;
+  margin-top: 8px;
+  margin-right: 30px;
+  padding: 6px;
   border: 1px solid #FFE;
   font-weight: bold;
-
 }
-
+.logo,.cognito,.helloo{
+  float: left;
+}
 section{
   text-align: center;
-  max-width: 95%;
+  max-width: 98%;
   margin: -9px auto 0 auto;
   padding: 15px;
 }
@@ -163,14 +162,13 @@ section{
   text-align: center;
   font-size: 0.8rem;
   float:left;
-  background-color: #FFE;
   display:block;
   border:1px solid  #1e90ff;
   padding: 6px;
-margin-bottom: 5px;
-opacity:0.8;
+  margin-bottom: 5px;
+  opacity:0.8;
 }
-lateralnav{
+.lateralnav{
   text-decoration: none;
 }
 footer{
@@ -189,8 +187,13 @@ h1, footer{
   width: 100%;
   font: normal, 1.5em, bold, cursive;
 }
+h2{
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
 h3{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 h2,h3,h4{
   color: #FFE;
@@ -202,11 +205,12 @@ h2,h3,h4{
 h3,span,.commande{
   font-style: italic;
 }
-.conseil{
+.lateralnav,.conseil,.enTete{
   background-color: darkorange;
 }
 .commande{
-  color: green;
+  border: 1px solid #FFE;
+  background-color: #1e90ff;
 }
 .detail{
   color: #1e90ff;
@@ -222,24 +226,35 @@ h3,span,.commande{
 .ligneTop{
   background-color: #1e90ff;
 }
+ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding: 2px 20px;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
 table,.conseil{
   border:1px solid darkorange;
 }
 table{
+  width: 100%;
   border-collapse: collapse;
   font-size: 1.0rem;
   background-color: #FFE;
-  opacity: 0.8;
+  opacity: 0.9;
   text-align: center;
 }
 td{
     border:1px solid darkorange;
     padding: 2px;
+    font-weight: bold;
 }
 
 span{
-  font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
 }
 .objectif{
   color:darkorange;
@@ -252,8 +267,17 @@ span{
   max-width: 100%
 }
 .advices{
+  padding: 10px;
 color: #1e90ff;
-font-weight: normal;
+font-weight: bold;
+font-size: 1.3rem;
+background-image: url('../img/rachmaninof.JPG');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.regle{
+  border: 2px solid #7fffd4;
+  background-color: beige;
 }
 table,ul,.sch,.advices,.pic,.root{
   margin: 0 auto;
@@ -261,7 +285,7 @@ table,ul,.sch,.advices,.pic,.root{
 
 .pic{
   border: 1px solid #1e90ff;
-  max-width: 70%;
+  max-width: 45%;
 }
 .root{
   border-width: 1px solid #e6e6fa;
@@ -269,31 +293,26 @@ table,ul,.sch,.advices,.pic,.root{
   padding:5px;
 }
 .references{
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .references a{
   color:#e6e6fa;
   text-decoration: none;
 }
-ul{
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 2px 20px;
-  text-decoration: none;
-}
-a{
-  text-decoration: none;
-}
+
 .pickers{
   max-width: 24px;
+}
+.auteur{
+  font-style: oblique;
+  color:green;
 }
 footer{
 padding-top: 6px;
 height: 45px;
 }
-/* PSEUDO CLASSES*/
+/*######################### PSEUDO CLASSES###################################""*/
 
 .logo:hover{
   transform: rotate(360deg) translate(0px, 50px);
@@ -305,12 +324,36 @@ height: 45px;
   background-color: #1e90ff;
 }
 .lateralnav a:hover{
-  color:darkorange;
-  background-color: #FFE;
+  color:green;
+  background-color: #fff;
   text-decoration: none;
+  font-size: 1.2rem;
+  padding: 2px;
 }
 
-/*MEDIA QUERIES*/
+/*###############################MEDIA QUERIES##################################""*/
+@media (min-width: 490px) {
+     .wrap{
+       min-height:calc(100vh - 45px);
+     }
+   }
+   @media (max-width: 769px) {
+        body{
+           font-weight: bold;
+        }
+        .definition{
+          font-size: 1.1rem;
+
+        }
+        h2{
+          font-size: 1.0rem;
+          font-weight: bold;
+        }
+        .root,.advices{
+          font-size: 0.8rem;
+        }
+
+      }
 @media screen and (max-width: 1308px) {
           .sch,.pic {
               display:none

@@ -17,6 +17,8 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+
+  <div class="wrap">
   <header>
     <div class="icone">
       <div class="helloo">
@@ -46,6 +48,9 @@
         </ul>
     </nav>
    </header>
+
+   <div class="wrapper">
+
    <h1>CHEATSHEET GIT</h1>
    <ul class="lateralnav hidden-md-up ">
             <li><a href="index.html">HOME</a></li>
@@ -55,13 +60,13 @@
          </ul>
    </div>
   <section>
-      <h3>De l'historique: log et blame</h3>
+      <h2>De l'historique: log et blame</h2>
       <table>
         <tr><td>Afficher tous les commits, en commençant par le plus récent:</td><td class="ligneTop"><span>git log</span></td><tr>
         <tr><td>Afficher les modifications effectuées sur un fichier en particulier:</td><td> <span> git log -p nom_du_fichier</span></td></tr>
         <tr><td>Affiche l'auteur et le moment d'une modification:</td><td> <span>git blame nom_du_fichier</span></td></tr>
       </table>
-      <h3>Quant aux branches et balises</h3>
+      <h2>Quant aux branches et balises</h2>
       <table>
         <tr><td>Afficher la liste des branches existantes:</td><td><span> git branch -av</span></td></tr>
         <tr><td>Changer de branche:</td><td class="ligneTop"> <span> git checkout nom_de_la_branche</span></td></tr>
@@ -71,8 +76,8 @@
         <tr><td>marquer le commit en courant avec un tag:</td><td><span> git tag tag-name</span></td><tr>
       </table>
 
-      <h3>Concernant la fusion et le changement de base</h3>
-      <table>
+      <h2 class="enTete">Concernant la fusion et le changement de base</h2>
+      <table class="ordre_liste">
         <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td class="ligneTop"> <span>git merge nom_de_la_branche</span></td></tr>
         <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
         <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
@@ -82,6 +87,12 @@
       </table>
 
   </section>
+  <!--  section finish here===============================================-->
+</div>
+<!--  Class wrapper finish here============================================-->
+</div>
+<!--  Class wrap finish here============================================-->
+<!--  footer strats here================================================-->
 
 <footer class="color_list">
   <ul>

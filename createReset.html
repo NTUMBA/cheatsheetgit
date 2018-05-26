@@ -17,6 +17,8 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+  <div class="wrap">
+
   <header>
     <div class="icone">
       <div class="helloo">
@@ -47,6 +49,8 @@
         </ul>
     </nav>
    </header>
+   <div class="wrapper">
+
    <h1>CHEATSHEET GIT</h1>
    <ul class="lateralnav hidden-md-up ">
             <li><a href="index.html">HOME</a></li>
@@ -57,12 +61,12 @@
    </div>
   <section>
 
-      <h3>Les commandes relatives à la création</h3>
+      <h2>Les commandes relatives à la création</h2>
       <table>
         <tr><td>Pour clôner un repository entendez projet (dossier -folder-) existant:</td><td class="ligneTop"><span> git clone ssh(ou http)://user@domain.com/NomDuRepository.git</span> </td></tr>
         <tr><td>Pour créer un nouvel endroit de Repository (initialiser un dossier):</td><td class="ligneTop"> <span> git init</span></td></tr>
       </table>
-      <h3>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h3>
+      <h2>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h2>
       <table>
         <tr><td>Vérifier l'état du projet en local par rapport au Repository courant:</td><td class="ligneTop"><span>  git status</span></td></tr>
         <tr><td>Changer le fichier courant:</td><td> <span> git diff</span></td></tr>
@@ -73,8 +77,8 @@
         <tr><td>Changer le dernier commit: (Ne pas modifier le commit publié):</td><td><span>  git commit--amend</span></td></tr>
       </table>
 
-      <h3>Les annulations</h3>
-      <table>
+      <h2 class="enTete">Les annulations</h2>
+      <table class="ordre_liste">
         <tr><td>Annuler toutes les modifications de mon dossier courant:</td><td> <span> git reset --hard HEAD</span></td></tr>
         <tr><td>Annuler  toutes les modifications accomplies dans un fichier en particulier:</td><td> <span> git checkout HEAD nom_du_fichier</span></td></tr>
         <tr><td>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées):</td><td> <span> git revert le_commit</span></td></tr>
@@ -84,6 +88,12 @@
       </table>
 
   </section>
+  <!--  section finish here===============================================-->
+</div>
+<!--  Class wrapper finish here============================================-->
+</div>
+<!--  Class wrap finish here============================================-->
+<!--  footer strats here================================================-->
 
 <footer class="color_list">
   <ul>

@@ -17,6 +17,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+  <div class="wrap">
   <header>
     <div class="icone">
       <div class="helloo">
@@ -45,6 +46,9 @@
         </ul>
     </nav>
    </header>
+
+   <div class="wrapper">
+
    <h1>CHEATSHEET GIT</h1>
    <ul class="lateralnav hidden-md-up ">
             <li><a href="index.html">HOME</a></li>
@@ -55,7 +59,7 @@
    </div>
   <section>
 
-      <h3>Pour les mises à jour et les publications</h3>
+      <h2>Pour les mises à jour et les publications</h2>
       <table>
         <tr><td>Afficher la liste de tous les remotes à jour:</td><td><span> git remote -v</span></td></tr>
         <tr><td>Afficher les informations relatives à un remote: </td><td><span>git remote show remote-name</span></td></tr>
@@ -68,8 +72,8 @@
         <tr><td>Inserer une balise:</td><td><span> git push --tags</span></td></tr>
         <tr><td colspan="2">Désigner dans l'équipe une personne chargée de gérer les "pull requests"</td></tr>
       </table>
-      <h3>La fusion et le changement de base</h3>
-      <table>
+      <h2 class="enTete">La fusion et le changement de base</h2>
+      <table class="ordre_liste">
         <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td class="ligneTop"> <span>git merge nom_de_la_branche</span></td></tr>
         <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
         <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
@@ -77,10 +81,13 @@
         <tr><td>Utiliser l'outil de configuration de fusion pour resoudre un conflit:</td><td><span> git merge tool</span></td></tr>
         <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de résoudre, via un éditeur de texte, d'éventuel conflit</td></tr>
       </table>
-
-
   </section>
-
+  <!--  section finish here===============================================-->
+</div>
+<!--  Class wrapper finish here============================================-->
+</div>
+<!--  Class wrap finish here============================================-->
+<!--  footer strats here================================================-->
 <footer class="color_list">
   <ul>
     <li><a href="https://gmail.com/simonpierremboma@gmail.com" class="hidden-sm-down colortext"><img src="img/message.png" alt="envelope" class="pickers">apombomapro@gmail.com</a> </li>

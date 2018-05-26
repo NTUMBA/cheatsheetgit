@@ -17,6 +17,7 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
+  <div class="wrapper">
   <header>
     <div class="icone">
       <div class="helloo">
@@ -45,6 +46,7 @@
         </ul>
     </nav>
    </header>
+   <div class="wrapper">
 
   <h1>CHEATSHEET GIT</h1>
   <ul class="lateralnav hidden-md-up ">
@@ -73,12 +75,12 @@
               à ce document structuré de sorte qu'il soit lisible, compréhensible et confortable
               à consulter.</p>
         </div>
-    </div>
+
       <div class="sch">
         <h2>Schéma</h2>
       </div>
       <div class="pic">
-           <a href="https://community.kde.org/"> <img src="https://community.kde.org/images.community/2/23/Kde-git-workflow.svg"/></a>
+           <a href="https://github.com"> <img src="https://community.kde.org/images.community/2/23/Kde-git-workflow.svg"/></a>
       </div>
     <div class="advices">
       <h2 class="conseil">QUELQUES CONSEILS UTILES POUR UNE MAITRISE EFFICIENTE<h2>
@@ -88,16 +90,18 @@
           <p class="commande">git clone ssh (ou http) ...</p>
           <p class="commande">git add -A  </p>
           <p class="commande">git commit -m "First commit ou updates ..."</p>
+          <p class="commande">git push origin nom_de_la branche</p>
+          <p class="commande">git pull [options] récupère et fusionne automatiquement une branche distante dans votre branche locale</p>
         </div>
-    <h3>Simon says:</h3>
-      <p>Les commits font état des modifications</p>
-      <p>Il est recommandé de les rédiger fréquemment</p>
-      <p>Eviter de commit des tâches non abouties</p>
-      <p>Tester les codes avant de commit les actions</p>
-      <p>Les messages liés aux commits doivent être concis, précis et pertinents</p>
-      <p>Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
-      <p>S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter quelque surprise ...</span</p>
-      <p>Consulter les aides, les "tutorials" et autres ressources en ligne</p>
+    <h3 class="auteur">Simon says:</h3>
+      <p class="regle">Les commits font état des modifications</p>
+      <p class="regle">Il est recommandé de les rédiger fréquemment</p>
+      <p class="regle">Eviter de commit des tâches non abouties</p>
+      <p class="regle">Tester les codes avant de commit les actions</p>
+      <p class="regle">Les messages liés aux commits doivent être concis, précis et pertinents</p>
+      <p class="regle">Les versions de contrôle ne doivent pas être considérées comme étant un système de sauvegarde</p>
+      <p class="regle">S'accorder (en équipe) sur le flux des opérations: A (diapason); <span class="objectif">mieux, adopter la méthode agile (ex.: SCRUM) pour éviter quelque surprise ...</span</p>
+      <p class="regle">Consulter les aides, les "tutorials" et autres ressources en ligne</p>
   </div>
     <div class="root references ">
     <h4>Sources et plus de documentation</h4>
@@ -108,6 +112,12 @@
       </div>
 
   </section>
+  <!--  section finish here===============================================-->
+</div>
+<!--  Class wrapper finish here============================================-->
+</div>
+<!--  Class wrap finish here============================================-->
+<!--  footer strats here================================================-->
 
 <footer class="color_list">
   <ul>

@@ -6,11 +6,15 @@ function main() {
   $('.cognito').hide();
   $('.cognito').fadeIn(10000);
   $('.detail').hide();
-$('.definition').on('click', function() {
-$('.detail').toggle();
-});
+  $('.definition').on('click', function() {
+  $('.detail').toggle();
+  });
+  $('.ordre_liste').hide();
+  $('.enTete').on('click', function() {
+  $('.ordre_liste').toggle();
+  });
   $('.memento').hide();
-$('.conseil').on('click', function() {
-$('.memento').toggle();
-});
+  $('.conseil').on('click', function() {
+  $('.memento').toggle();
+  });
 }
