@@ -53,5 +53,4 @@ function main() {
   $('.enTeteBase').on('click', function() {
   $('.ordre_listeBase').toggle();
   });
-
 }
