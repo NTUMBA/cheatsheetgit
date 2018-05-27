@@ -153,19 +153,22 @@ img{
   float: left;
 }
 section{
+  position: relative;
   text-align: center;
   max-width: 98%;
   margin: -9px auto 0 auto;
   padding: 15px;
+
 }
 .lateralnav{
+  position: relative;
   text-align: center;
   font-size: 0.8rem;
-  float:left;
+  /*float:left;*/
   display:block;
   border:1px solid  #1e90ff;
   padding: 6px;
-  margin-bottom: 5px;
+  margin-bottom: 0px 25px 10px 0px;
   opacity:0.8;
   text-decoration: none;
   background-color: #7fffd4;
@@ -267,12 +270,13 @@ span{
 }
 .advices{
   padding: 10px;
-color: #1e90ff;
-font-weight: bold;
-font-size: 1.3rem;
-background-image: url('../img/rachmaninof.JPG');
-background-repeat: no-repeat;
-background-size: cover;
+  color: #1e90ff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  background-image: url('../img/rachmaninof.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:auto;
 }
 .regle{
   border: 2px solid #7fffd4;
