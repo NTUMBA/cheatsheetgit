@@ -17,40 +17,39 @@
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <div class="wrap">
 
-  <header>
-    <div class="icone">
-      <div class="helloo">
-        HELLO
+    <div class="wrap">
+    <header>
+      <div class="icone">
+        <div class="helloo">
+          HELLO
+        </div>
+        <div class="cognito">
+          MBOMA
+        </div>
+        <div class="hidden-sm-down logo"> <img src="img/rsz_daktyla.jpg" alt="logo" /></div>
       </div>
-      <div class="cognito">
-        MBOMA
-      </div>
-      <div class="hidden-sm-down logo"> <img src="img/rsz_daktyla.jpg" alt="logo" /></div>
-    </div>
-    <nav class="navbar navbar-light bg-faded ">
 
-    <!--nav bar starts=========================================================  -->
-    <nav class="hidden-sm-down ">
-        <ul class="nav nav-tabs colortext">
-          <li class="nav-item color_list">
-          <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="color_list nav-item">
-          <a href="createReset.html" class="nav-link active">CREATION</a>
-          </li>
-          <li class="color_list nav-item">
-          <a href="branchLog.html" class="nav-link">BRANCHES ET VERSIONS</a>
-          </li>
-          <li class="color_list nav-item">
-          <a href="update.html" class="nav-link">MISE A JOUR ET FUSION</a>
-          </li>
-        </ul>
-    </nav>
-   </header>
-   <div class="wrapper">
+      <!--nav bar starts=========================================================  -->
+      <nav id="up" class="hidden-sm-down ">
+          <ul class="nav nav-tabs colortext">
+            <li class="nav-item color_list">
+            <a href="index.html" class="nav-link">HOME</a>
+            </li>
+            <li class="color_list nav-item">
+            <a href="createReset.html" class="nav-link active">CREATION</a>
+            </li>
+            <li class="color_list nav-item">
+            <a href="branchLog.html" class="nav-link">BRANCHES ET VERSIONS</a>
+            </li>
+            <li class="color_list nav-item">
+            <a href="update.html" class="nav-link">MISE A JOUR ET FUSION</a>
+            </li>
+          </ul>
+      </nav>
+     </header>
 
+     <div class="wrapper">
    <h1>CHEATSHEET GIT</h1>
    <ul class="lateralnav hidden-md-up ">
             <li><a href="index.html">HOME</a></li>
@@ -60,14 +59,13 @@
          </ul>
    </div>
   <section>
-
-      <h2>Les commandes relatives à la création</h2>
-      <table>
+      <h2 class="enTetecreate conseil">Les commandes relatives à la création</h2>
+      <table class="ordre_listeCreate">
         <tr><td>Pour clôner un repository entendez projet (dossier -folder-) existant:</td><td class="ligneTop"><span> git clone ssh(ou http)://user@domain.com/NomDuRepository.git</span> </td></tr>
         <tr><td>Pour créer un nouvel endroit de Repository (initialiser un dossier):</td><td class="ligneTop"> <span> git init</span></td></tr>
       </table>
-      <h2>Les commandes liées à la recherche de folders et files ainsi qu'aux modifications</h2>
-      <table>
+      <h2 class="enTeteCheck conseil">LES COMMANDES LIEES AUX FOLDRES, FILES ET AUX MODIFICATIONS</h2>
+      <table class="ordre_listeCheck">
         <tr><td>Vérifier l'état du projet en local par rapport au Repository courant:</td><td class="ligneTop"><span>  git status</span></td></tr>
         <tr><td>Changer le fichier courant:</td><td> <span> git diff</span></td></tr>
         <tr><td>Ajouter toutes les modifications au commit suivant:</td><td class="ligneTop"><span>git add -A</span></td></tr>
@@ -77,8 +75,8 @@
         <tr><td>Changer le dernier commit: (Ne pas modifier le commit publié):</td><td><span>  git commit--amend</span></td></tr>
       </table>
 
-      <h2 class="enTete">Les annulations</h2>
-      <table class="ordre_liste">
+      <h2 class="enTeteAnnulation conseil">LES ANNULATONS</h2>
+      <table class="ordre_listeAnnulation">
         <tr><td>Annuler toutes les modifications de mon dossier courant:</td><td> <span> git reset --hard HEAD</span></td></tr>
         <tr><td>Annuler  toutes les modifications accomplies dans un fichier en particulier:</td><td> <span> git checkout HEAD nom_du_fichier</span></td></tr>
         <tr><td>Inverser un commit (en réalisant un nouveau commit avec des modifications opposées):</td><td> <span> git revert le_commit</span></td></tr>

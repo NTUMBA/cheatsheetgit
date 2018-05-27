@@ -60,14 +60,14 @@
          </ul>
    </div>
   <section>
-      <h2>De l'historique: log et blame</h2>
-      <table>
+      <h2 class="enTeteLog conseil">DE L'HISTORIQUE: LOG ET BLAME</h2>
+      <table class="ordre_listeLog">
         <tr><td>Afficher tous les commits, en commençant par le plus récent:</td><td class="ligneTop"><span>git log</span></td><tr>
         <tr><td>Afficher les modifications effectuées sur un fichier en particulier:</td><td> <span> git log -p nom_du_fichier</span></td></tr>
         <tr><td>Affiche l'auteur et le moment d'une modification:</td><td> <span>git blame nom_du_fichier</span></td></tr>
       </table>
-      <h2>Quant aux branches et balises</h2>
-      <table>
+      <h2 class="enTeteBranche conseil">QUANT AUX BRANCHES ET BALISES</h2>
+      <table class="ordre_listeBranche">
         <tr><td>Afficher la liste des branches existantes:</td><td><span> git branch -av</span></td></tr>
         <tr><td>Changer de branche:</td><td class="ligneTop"> <span> git checkout nom_de_la_branche</span></td></tr>
         <tr><td>Créer une nouvelle branche à partir de la branche courante:</td><td class="ligneTop"> <span> git branch nom_de_la_nouvelle_branche</td></tr>
@@ -76,8 +76,8 @@
         <tr><td>marquer le commit en courant avec un tag:</td><td><span> git tag tag-name</span></td><tr>
       </table>
 
-      <h2 class="enTete">Concernant la fusion et le changement de base</h2>
-      <table class="ordre_liste">
+      <h2 class="enTeteBase conseil">CONCERNANT LA FUSION ET LE CHANGEMENT DE BASE</h2>
+      <table class="ordre_listeBase">
         <tr><td>Fusionner une branche à l'intérieur du HEAT courant:</td><td class="ligneTop"> <span>git merge nom_de_la_branche</span></td></tr>
         <tr><td>Changer la base du HEAD courant vers une branche:(Ne pas prendre en compte les commits publiés):</td><td><span> git rebase nom_de_la_branche</span> </td></tr>
         <tr><td>Abondonner un rebase:</td><td><span> git rebase --abort</span></td></tr>
@@ -85,7 +85,6 @@
         <tr><td>Utiliser l'outil de configuration de fusion pour resoudre un conflit:</td><td><span> git merge tool</span></td></tr>
         <tr><td colspan="2" class="editor">Désigner dans l'équipe une personne chargée de résoudre, via un éditeur de texte, d'éventuel conflit</td></tr>
       </table>
-
   </section>
   <!--  section finish here===============================================-->
 </div>
