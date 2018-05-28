@@ -261,16 +261,23 @@ span{
 .objectif{
   color:darkorange;
 }
-.pic,.advices{
+.sch,.pic,.advices{
   background-color: #FFD;
   opacity: 0.8;
 }
 .sch{
   max-width: 100%
 }
+.schema,.advices {
+  color: #1e90ff;
+}
+.sourceListe a{
+  padding: 3px;
+  background-color:  #1e90ff;
+  border-radius: 2px;
+}
 .advices{
   padding: 10px;
-  color: #1e90ff;
   font-weight: bold;
   font-size: 1.3rem;
   background-image: url('../img/rachmaninof.JPG');
@@ -315,6 +322,7 @@ footer{
 padding-top: 6px;
 height: 45px;
 }
+
 /*######################### PSEUDO CLASSES###################################""*/
 
 .logo:hover{
