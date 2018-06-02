@@ -49,8 +49,4 @@ function main() {
   $('.enTeteBranche').on('click', function() {
   $('.ordre_listeBranche').toggle();
   });
-  $('.ordre_listeBase').hide();
-  $('.enTeteBase').on('click', function() {
-  $('.ordre_listeBase').toggle();
-  });
 }
