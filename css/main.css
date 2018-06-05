@@ -212,6 +212,7 @@ h3,span,.commande{
 }
 .commande{
   border: 1px solid #FFE;
+  color: #000;
   background-color: #1e90ff;
 }
 .detail{
